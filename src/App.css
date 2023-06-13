@@ -1,38 +1,345 @@
+
+body{
+  margin:0;
+  background-color: black;
+  color:white;
+}
 .App {
   text-align: center;
 }
+.TodoList{
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+}
+input{
+  height:1.5rem;
+  border-radius: 0.5rem;
+  padding-left:0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+button{
+  margin:0.5rem 1rem;
+  border-radius:0.5rem;
+}
+.delete-button{
+  background-color: rgb(255, 67, 67);
+  border-color: red;
+  color:white;
+}
+.complete-button{
+  background-color: rgb(27, 200, 27);
+  border-color:green;
+  color:white;
+  margin-left:-0.5rem;
+}
+ul{
+  list-style: none;
+}
+.toDoNameInput{
+  padding:0.3rem;
+  border-radius:0.4rem;
+  margin-right:1rem;
+}
+.Add{
+  padding:0.3rem;
+  border-radius:0.4rem;
+}
+
+.completed{
+  text-decoration: line-through;
+}
+
+/* Nawigacja */
+.navigation {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Strona główna */
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* TodoList */
+.TodoList {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Kontakt */
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+/* Strona główna */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.home-content {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Kontakt */
+.contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(189, 0, 255, 1);
+  background-image: linear-gradient(297deg, rgba(189, 0, 255, 1) 21%, rgba(0, 98, 255, 1) 100%);
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation li {
+  margin: 0 10px;
+
+}
+
+.navigation a {
   color: white;
+  text-decoration: none;
+
+  font-size: 2.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.navigation a:hover {
+  color: lightblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Contact label{
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+
+body{
+  color:black;
+  background-color: #f2f2f2
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+.Contact button{
+  margin-top: 4rem;
+font-family: Roboto, sans-serif;
+font-weight: 700;
+font-size: 1.5rem;
+color: #fff;
+background-color: #0066CC;
+padding: 10px 30px;
+border: solid #8fb4d9 4px;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 0px 25px 25px 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+
+}
+.Contact button:hover{
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #0066cc;
+border: solid 4px #0066cc;
+
+}
+input {
+  padding: 5px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+
+}
+input:focus {
+  outline:none;
+}
+textarea {
+  padding: 5px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+
+}
+textarea:focus {
+  outline:none;
+}
+
+.addButton {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  background: #4433ff;
+}
+
+.addButton:hover {
+  background-color: #3a86ff;
+}
+
+.addButton:active {
+  top: 2px;
+}
+
+.delete-button {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  background: #ff3333;
+}
+
+.delete-button:hover {
+  background-color: #f05d5d;
+}
+
+.addButton :active {
+  top: 2px;
+}
+
+.complete-button {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  background: #00e043;
+}
+
+.complete-button:hover {
+  background-color: #07e49a;
+}
+
+.complete-button :active {
+  top: 2px;
+}
+
+.Contact {
+  max-width: 400px;
+  padding: 0.2rempx;
+  text-align: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-gap: 0.1rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.Contact label {
+  text-align: left;
+  padding-right: 10px;
+  padding-bottom: 1rem;
+}
+
+.Contact input, .Contact textarea {
+  width: 100%;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 15rem;
 }
