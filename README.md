@@ -2,9 +2,9 @@
 (prosta aplikacja do nauki React, możliwy rozwój)
 
 # Podgląd aplikacji:
-```
-https://krzyczkowski.github.io/to-do-app/
-```
+
+<a href="https://krzyczkowski.github.io/to-do-app/">https://krzyczkowski.github.io/to-do-app/</a>
+
 
 
 
