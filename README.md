@@ -2,7 +2,16 @@
 (prosta aplikacja do nauki React, możliwy rozwój)
 
 Sposób uruchomienia aplikacji:
-```instalacja
+
+Pobranie repo:
+```
+ git clone https://github.com/Krzyczkowski/to-do-app
+```
+Instalacja
+```
 npm install
+```
+Uruchomienie
+```
 npm start
 ```
