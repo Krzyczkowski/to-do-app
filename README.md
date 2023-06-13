@@ -1,7 +1,7 @@
 # Prosta aplikacja to-do listy stworzona w React na zajęciach Frontendowych 
 (prosta aplikacja do nauki React, możliwy rozwój)
 
-> # Podgląd aplikacji:
+# Podgląd aplikacji:
 ```
 https://krzyczkowski.github.io/to-do-app/
 ```
