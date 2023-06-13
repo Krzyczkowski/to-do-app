@@ -11,9 +11,9 @@ function App() {
       <div>
         <Navigation />
         <Routes>
-          <Route path="/to-do-app/" element={<Home />} />
-          <Route path="/to-do-app/todo/" element={<TodoList />} />
-          <Route path="/to-do-app/contact/" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/todo" element={<TodoList />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

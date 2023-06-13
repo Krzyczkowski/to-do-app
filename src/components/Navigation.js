@@ -6,13 +6,13 @@ function Navigation() {
     <nav className='navigation'>
       <ul>
         <li>
-          <Link to="/to-do-app/">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/to-do-app/todo/">Todo</Link>
+          <Link to="/todo">Todo</Link>
         </li>
         <li>
-          <Link to="/to-do-app/contact/">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </nav>
