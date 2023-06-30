@@ -6,6 +6,7 @@ import TodoList from './pages/TodoList';
 import Contact from './pages/Contact';
 import './App.css';
 import NotFound from './pages/NotFound';
+
 function App() {
   return (
     <Router>
@@ -18,6 +19,8 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
+
+      
     </Router>
   );
 }
